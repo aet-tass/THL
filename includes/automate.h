@@ -1,5 +1,5 @@
-#ifndef AUTOMATE_H
-#define AUTOMATE_H
+#ifndef t_automate_H
+#define t_automate_H
 
 #include <stdio.h>
 #include <string.h>
@@ -29,12 +29,15 @@ typedef	struct s_data
 	t_node	*nodes;
 	t_node	*ins;
 	t_node	*outs;
-}	t_data;
+}	t_automate;
 
-t_data 	*ft_parser(char *filename);
-void	gen_dot_file(t_data *data, char *name);
-int		find_word(t_data *data, char *word);
-void	find_in_file(t_data *data, char *filename);
+t_automate 	*ft_parser(char *filename);
+void		gen_dot_file(t_automate *data, char *name);
+int			find_word(t_automate *data, char *word);
+void		find_in_file(t_automate *data, char *filename);
+int 		get_nodes_size(t_node *nodes);
+t_automate  *copy_autmate(t_automate *a, int id_offset);
+void    	print_nodes(t_node *n);
 
 
 

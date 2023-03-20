@@ -23,7 +23,7 @@ static void	gen_io_ins(t_node *nodes, int fd, int in)
 	}
 }
 
-void	gen_dot_file(t_data *data, char *name)
+void	gen_dot_file(t_automate *data, char *name)
 {
 	int fd = open(name, O_RDWR | O_CREAT | O_TRUNC, 0777);
 	if (fd < 0)

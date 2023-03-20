@@ -2,14 +2,14 @@
 make gen_dot_file 
 	to generate the excutable that generates the dot find_in_file
 	usage:
-		./gen_dot_file [automate file] [output file .dot]
+		./gen_dot_file [t_automate file] [output file .dot]
 	
 make find_word
-	to generate the excutable that finds a word in the automate
+	to generate the excutable that finds a word in the t_automate
 	usage:
-		./find_word [automate file] [word to find]
+		./find_word [t_automate file] [word to find]
 
 make find_in_file
-	to generate the excutable that printts the words found in the file and in the automate
+	to generate the excutable that printts the words found in the file and in the t_automate
 	usage:
-		./find_in_file [automate file] [file.txt]
+		./find_in_file [t_automate file] [file.txt]

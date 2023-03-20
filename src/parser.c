@@ -163,9 +163,9 @@ void	extract_io(int fd, t_node **io_ptr, t_node *nodes)
 	*io_ptr = io;
 }
 
-t_data *ft_parser(char *filename)
+t_automate *ft_parser(char *filename)
 {
-	t_data	*data = malloc(sizeof(t_data));
+	t_automate	*data = malloc(sizeof(t_automate));
 	int fd = open(filename, O_RDONLY);
 	create_nodes(fd, &data->nodes, filename);
 	extract_io(fd, &data->ins, data->nodes);
@@ -176,7 +176,7 @@ t_data *ft_parser(char *filename)
 
 /* int main(int c, char **v)
 {
-	t_data	*data = ft_parser(v[1]);
+	t_automate	*data = ft_parser(v[1]);
 	t_node *nodes = data->nodes;
 
 	

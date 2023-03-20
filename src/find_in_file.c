@@ -1,6 +1,6 @@
 #include "automate.h"
 
-void	find_in_file(t_data *data, char *filename)
+void	find_in_file(t_automate *data, char *filename)
 {
 	char buff[MAX_SIZE];
 	int fd = open(filename, O_RDONLY);
